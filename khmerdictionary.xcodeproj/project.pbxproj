@@ -1,0 +1,797 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68E3E07CDB11BB2EEFA3B435 /* SplashState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E3E838F748596C761C68F8 /* SplashState.swift */; };
+		68E3E1752BA63CCBCD85E41D /* WordsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E3E3458721CBBBFE21C2A8 /* WordsScreen.swift */; };
+		68E3E35BD9A5FBE40F1F7489 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E3E99E12188BD48027DA6B /* Const.swift */; };
+		68E3E3BD3180E6AD1083EE6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E3E619CBBB81851646D379 /* ContentView.swift */; };
+		68E3E48A2E354298E367A457 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E3E9BB1B9C5038DA4FC762 /* SplashView.swift */; };
+		68E3E4AD07562A5BE98D9297 /* DefinitionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E3E22B018D90343A68A2E8 /* DefinitionState.swift */; };
+		68E3E4F3B17F5BDAA4BFC231 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E3E8EE931848EE3E85CB3B /* SettingsView.swift */; };
+		68E3E6757560110A0B224CF1 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E3EB58D21ED4A8B215062C /* TitleView.swift */; };
+		68E3E8739C930160CE6A8DA0 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E3E7097706B50129AAB768 /* BaseViewModel.swift */; };
+		68E3EA2CB8FCCCA182277847 /* DefinitionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E3EAD809C2AD308DC23975 /* DefinitionViewModel.swift */; };
+		68E3EBA46E064B1999EF5B44 /* DefinitionUi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E3E2429DA770B740E12BFF /* DefinitionUi.swift */; };
+		68E3ECE2F7961A3FCD9E5422 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E3EDA5D9E98B77E95280FB /* SearchView.swift */; };
+		68E3EEE067FD23824588CE90 /* AppRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E3EFFAE06D88282051E58A /* AppRepository.swift */; };
+		68E3EFEF035F6DAB46998D05 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E3ECE15D729BDBBD441E4B /* SplashViewModel.swift */; };
+		FB0A92C328C77A940054BCFE /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = FB0A92C228C77A940054BCFE /* ZIPFoundation */; };
+		FBDA726F28C306D800877021 /* khmerdictionaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDA726E28C306D800877021 /* khmerdictionaryApp.swift */; };
+		FBDA727328C306DA00877021 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDA727228C306DA00877021 /* Assets.xcassets */; };
+		FBDA727628C306DA00877021 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDA727528C306DA00877021 /* Preview Assets.xcassets */; };
+		FBDA728028C306DB00877021 /* khmerdictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDA727F28C306DB00877021 /* khmerdictionaryTests.swift */; };
+		FBDA728A28C306DB00877021 /* khmerdictionaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDA728928C306DB00877021 /* khmerdictionaryUITests.swift */; };
+		FBDA728C28C306DB00877021 /* khmerdictionaryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDA728B28C306DB00877021 /* khmerdictionaryUITestsLaunchTests.swift */; };
+		FBE224C728C64A6400CD3FC6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FBE224C628C64A6400CD3FC6 /* Alamofire */; };
+		FBE224CA28C64B1400CD3FC6 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = FBE224C928C64B1400CD3FC6 /* SQLite */; };
+		FBFD0B0428C9B54000E097F3 /* WordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFD0B0328C9B54000E097F3 /* WordsView.swift */; };
+		FBFD0B0628C9B54E00E097F3 /* WordsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFD0B0528C9B54E00E097F3 /* WordsViewModel.swift */; };
+		FBFD0B0828C9B55B00E097F3 /* WordsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFD0B0728C9B55B00E097F3 /* WordsState.swift */; };
+		FBFD0B0A28C9E05300E097F3 /* WordRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFD0B0928C9E05300E097F3 /* WordRow.swift */; };
+		FBFD0B0D28CA26DD00E097F3 /* DefinitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFD0B0C28CA26DD00E097F3 /* DefinitionView.swift */; };
+		FBFD0B2228CA2D3A00E097F3 /* Hanuman-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FBFD0B1F28CA2D3000E097F3 /* Hanuman-Regular.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBDA727C28C306DB00877021 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBDA726328C306D800877021 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBDA726A28C306D800877021;
+			remoteInfo = khmerdictionary;
+		};
+		FBDA728628C306DB00877021 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBDA726328C306D800877021 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBDA726A28C306D800877021;
+			remoteInfo = khmerdictionary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		68E3E22B018D90343A68A2E8 /* DefinitionState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionState.swift; sourceTree = "<group>"; };
+		68E3E2429DA770B740E12BFF /* DefinitionUi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionUi.swift; sourceTree = "<group>"; };
+		68E3E3458721CBBBFE21C2A8 /* WordsScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordsScreen.swift; sourceTree = "<group>"; };
+		68E3E619CBBB81851646D379 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		68E3E7097706B50129AAB768 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		68E3E838F748596C761C68F8 /* SplashState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashState.swift; sourceTree = "<group>"; };
+		68E3E8EE931848EE3E85CB3B /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		68E3E99E12188BD48027DA6B /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		68E3E9BB1B9C5038DA4FC762 /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		68E3EAD809C2AD308DC23975 /* DefinitionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionViewModel.swift; sourceTree = "<group>"; };
+		68E3EB58D21ED4A8B215062C /* TitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		68E3ECE15D729BDBBD441E4B /* SplashViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		68E3EDA5D9E98B77E95280FB /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		68E3EFFAE06D88282051E58A /* AppRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRepository.swift; sourceTree = "<group>"; };
+		FBDA726B28C306D800877021 /* khmerdictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = khmerdictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBDA726E28C306D800877021 /* khmerdictionaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = khmerdictionaryApp.swift; sourceTree = "<group>"; };
+		FBDA727228C306DA00877021 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBDA727528C306DA00877021 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBDA727B28C306DB00877021 /* khmerdictionaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = khmerdictionaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBDA727F28C306DB00877021 /* khmerdictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = khmerdictionaryTests.swift; sourceTree = "<group>"; };
+		FBDA728528C306DB00877021 /* khmerdictionaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = khmerdictionaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBDA728928C306DB00877021 /* khmerdictionaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = khmerdictionaryUITests.swift; sourceTree = "<group>"; };
+		FBDA728B28C306DB00877021 /* khmerdictionaryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = khmerdictionaryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FBFD0B0328C9B54000E097F3 /* WordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsView.swift; sourceTree = "<group>"; };
+		FBFD0B0528C9B54E00E097F3 /* WordsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsViewModel.swift; sourceTree = "<group>"; };
+		FBFD0B0728C9B55B00E097F3 /* WordsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsState.swift; sourceTree = "<group>"; };
+		FBFD0B0928C9E05300E097F3 /* WordRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordRow.swift; sourceTree = "<group>"; };
+		FBFD0B0C28CA26DD00E097F3 /* DefinitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionView.swift; sourceTree = "<group>"; };
+		FBFD0B1728CA2AA500E097F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBFD0B1F28CA2D3000E097F3 /* Hanuman-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hanuman-Regular.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBDA726828C306D800877021 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBE224CA28C64B1400CD3FC6 /* SQLite in Frameworks */,
+				FBE224C728C64A6400CD3FC6 /* Alamofire in Frameworks */,
+				FB0A92C328C77A940054BCFE /* ZIPFoundation in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBDA727828C306DB00877021 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBDA728228C306DB00877021 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68E3E224F7C5F0F9A55E0443 /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				68E3E8EE931848EE3E85CB3B /* SettingsView.swift */,
+			);
+			path = settings;
+			sourceTree = "<group>";
+		};
+		68E3E61D979B5CBC17BE31FF /* data */ = {
+			isa = PBXGroup;
+			children = (
+				68E3EFFAE06D88282051E58A /* AppRepository.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		68E3E863F8851E8837665283 /* content */ = {
+			isa = PBXGroup;
+			children = (
+				68E3E619CBBB81851646D379 /* ContentView.swift */,
+			);
+			path = content;
+			sourceTree = "<group>";
+		};
+		68E3ECCFA0E450FCD55749D9 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				FBFD0B0B28CA26C700E097F3 /* definition */,
+				FBFD0B0228C9B52D00E097F3 /* words */,
+				68E3EFF956E1F9841101C6A5 /* splash */,
+				68E3E224F7C5F0F9A55E0443 /* settings */,
+				68E3E863F8851E8837665283 /* content */,
+				68E3E7097706B50129AAB768 /* BaseViewModel.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		68E3EFF956E1F9841101C6A5 /* splash */ = {
+			isa = PBXGroup;
+			children = (
+				68E3E9BB1B9C5038DA4FC762 /* SplashView.swift */,
+				68E3ECE15D729BDBBD441E4B /* SplashViewModel.swift */,
+				68E3E838F748596C761C68F8 /* SplashState.swift */,
+			);
+			path = splash;
+			sourceTree = "<group>";
+		};
+		FBDA726228C306D800877021 = {
+			isa = PBXGroup;
+			children = (
+				FBDA726D28C306D800877021 /* khmerdictionary */,
+				FBDA727E28C306DB00877021 /* khmerdictionaryTests */,
+				FBDA728828C306DB00877021 /* khmerdictionaryUITests */,
+				FBDA726C28C306D800877021 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBDA726C28C306D800877021 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBDA726B28C306D800877021 /* khmerdictionary.app */,
+				FBDA727B28C306DB00877021 /* khmerdictionaryTests.xctest */,
+				FBDA728528C306DB00877021 /* khmerdictionaryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBDA726D28C306D800877021 /* khmerdictionary */ = {
+			isa = PBXGroup;
+			children = (
+				68E3E99E12188BD48027DA6B /* Const.swift */,
+				FBDA726E28C306D800877021 /* khmerdictionaryApp.swift */,
+				68E3E61D979B5CBC17BE31FF /* data */,
+				68E3ECCFA0E450FCD55749D9 /* ui */,
+				FBFD0B1728CA2AA500E097F3 /* Info.plist */,
+				FBDA727228C306DA00877021 /* Assets.xcassets */,
+				FBFD0B1828CA2BE400E097F3 /* Fonts */,
+				FBDA727428C306DA00877021 /* Preview Content */,
+			);
+			path = khmerdictionary;
+			sourceTree = "<group>";
+		};
+		FBDA727428C306DA00877021 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FBDA727528C306DA00877021 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FBDA727E28C306DB00877021 /* khmerdictionaryTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBDA727F28C306DB00877021 /* khmerdictionaryTests.swift */,
+			);
+			path = khmerdictionaryTests;
+			sourceTree = "<group>";
+		};
+		FBDA728828C306DB00877021 /* khmerdictionaryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FBDA728928C306DB00877021 /* khmerdictionaryUITests.swift */,
+				FBDA728B28C306DB00877021 /* khmerdictionaryUITestsLaunchTests.swift */,
+			);
+			path = khmerdictionaryUITests;
+			sourceTree = "<group>";
+		};
+		FBFD0B0228C9B52D00E097F3 /* words */ = {
+			isa = PBXGroup;
+			children = (
+				FBFD0B0328C9B54000E097F3 /* WordsView.swift */,
+				FBFD0B0528C9B54E00E097F3 /* WordsViewModel.swift */,
+				FBFD0B0728C9B55B00E097F3 /* WordsState.swift */,
+				FBFD0B0928C9E05300E097F3 /* WordRow.swift */,
+				68E3EB58D21ED4A8B215062C /* TitleView.swift */,
+				68E3EDA5D9E98B77E95280FB /* SearchView.swift */,
+				68E3E3458721CBBBFE21C2A8 /* WordsScreen.swift */,
+			);
+			path = words;
+			sourceTree = "<group>";
+		};
+		FBFD0B0B28CA26C700E097F3 /* definition */ = {
+			isa = PBXGroup;
+			children = (
+				FBFD0B0C28CA26DD00E097F3 /* DefinitionView.swift */,
+				68E3E2429DA770B740E12BFF /* DefinitionUi.swift */,
+				68E3E22B018D90343A68A2E8 /* DefinitionState.swift */,
+				68E3EAD809C2AD308DC23975 /* DefinitionViewModel.swift */,
+			);
+			path = definition;
+			sourceTree = "<group>";
+		};
+		FBFD0B1828CA2BE400E097F3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FBFD0B1F28CA2D3000E097F3 /* Hanuman-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBDA726A28C306D800877021 /* khmerdictionary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBDA728F28C306DB00877021 /* Build configuration list for PBXNativeTarget "khmerdictionary" */;
+			buildPhases = (
+				FBDA726728C306D800877021 /* Sources */,
+				FBDA726828C306D800877021 /* Frameworks */,
+				FBDA726928C306D800877021 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = khmerdictionary;
+			packageProductDependencies = (
+				FBE224C628C64A6400CD3FC6 /* Alamofire */,
+				FBE224C928C64B1400CD3FC6 /* SQLite */,
+				FB0A92C228C77A940054BCFE /* ZIPFoundation */,
+			);
+			productName = khmerdictionary;
+			productReference = FBDA726B28C306D800877021 /* khmerdictionary.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBDA727A28C306DB00877021 /* khmerdictionaryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBDA729228C306DB00877021 /* Build configuration list for PBXNativeTarget "khmerdictionaryTests" */;
+			buildPhases = (
+				FBDA727728C306DB00877021 /* Sources */,
+				FBDA727828C306DB00877021 /* Frameworks */,
+				FBDA727928C306DB00877021 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBDA727D28C306DB00877021 /* PBXTargetDependency */,
+			);
+			name = khmerdictionaryTests;
+			productName = khmerdictionaryTests;
+			productReference = FBDA727B28C306DB00877021 /* khmerdictionaryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FBDA728428C306DB00877021 /* khmerdictionaryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBDA729528C306DB00877021 /* Build configuration list for PBXNativeTarget "khmerdictionaryUITests" */;
+			buildPhases = (
+				FBDA728128C306DB00877021 /* Sources */,
+				FBDA728228C306DB00877021 /* Frameworks */,
+				FBDA728328C306DB00877021 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBDA728728C306DB00877021 /* PBXTargetDependency */,
+			);
+			name = khmerdictionaryUITests;
+			productName = khmerdictionaryUITests;
+			productReference = FBDA728528C306DB00877021 /* khmerdictionaryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBDA726328C306D800877021 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					FBDA726A28C306D800877021 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					FBDA727A28C306DB00877021 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = FBDA726A28C306D800877021;
+					};
+					FBDA728428C306DB00877021 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = FBDA726A28C306D800877021;
+					};
+				};
+			};
+			buildConfigurationList = FBDA726628C306D800877021 /* Build configuration list for PBXProject "khmerdictionary" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBDA726228C306D800877021;
+			packageReferences = (
+				FBE224C528C64A6400CD3FC6 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				FBE224C828C64B1400CD3FC6 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+				FB0A92C128C77A940054BCFE /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+			);
+			productRefGroup = FBDA726C28C306D800877021 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBDA726A28C306D800877021 /* khmerdictionary */,
+				FBDA727A28C306DB00877021 /* khmerdictionaryTests */,
+				FBDA728428C306DB00877021 /* khmerdictionaryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBDA726928C306D800877021 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBFD0B2228CA2D3A00E097F3 /* Hanuman-Regular.ttf in Resources */,
+				FBDA727628C306DA00877021 /* Preview Assets.xcassets in Resources */,
+				FBDA727328C306DA00877021 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBDA727928C306DB00877021 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBDA728328C306DB00877021 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBDA726728C306D800877021 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBFD0B0828C9B55B00E097F3 /* WordsState.swift in Sources */,
+				FBFD0B0D28CA26DD00E097F3 /* DefinitionView.swift in Sources */,
+				FBDA726F28C306D800877021 /* khmerdictionaryApp.swift in Sources */,
+				FBFD0B0628C9B54E00E097F3 /* WordsViewModel.swift in Sources */,
+				FBFD0B0A28C9E05300E097F3 /* WordRow.swift in Sources */,
+				FBFD0B0428C9B54000E097F3 /* WordsView.swift in Sources */,
+				68E3E48A2E354298E367A457 /* SplashView.swift in Sources */,
+				68E3EFEF035F6DAB46998D05 /* SplashViewModel.swift in Sources */,
+				68E3E07CDB11BB2EEFA3B435 /* SplashState.swift in Sources */,
+				68E3EEE067FD23824588CE90 /* AppRepository.swift in Sources */,
+				68E3E35BD9A5FBE40F1F7489 /* Const.swift in Sources */,
+				68E3EBA46E064B1999EF5B44 /* DefinitionUi.swift in Sources */,
+				68E3E4AD07562A5BE98D9297 /* DefinitionState.swift in Sources */,
+				68E3EA2CB8FCCCA182277847 /* DefinitionViewModel.swift in Sources */,
+				68E3E4F3B17F5BDAA4BFC231 /* SettingsView.swift in Sources */,
+				68E3E6757560110A0B224CF1 /* TitleView.swift in Sources */,
+				68E3ECE2F7961A3FCD9E5422 /* SearchView.swift in Sources */,
+				68E3E1752BA63CCBCD85E41D /* WordsScreen.swift in Sources */,
+				68E3E3BD3180E6AD1083EE6A /* ContentView.swift in Sources */,
+				68E3E8739C930160CE6A8DA0 /* BaseViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBDA727728C306DB00877021 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBDA728028C306DB00877021 /* khmerdictionaryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBDA728128C306DB00877021 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBDA728C28C306DB00877021 /* khmerdictionaryUITestsLaunchTests.swift in Sources */,
+				FBDA728A28C306DB00877021 /* khmerdictionaryUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBDA727D28C306DB00877021 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBDA726A28C306D800877021 /* khmerdictionary */;
+			targetProxy = FBDA727C28C306DB00877021 /* PBXContainerItemProxy */;
+		};
+		FBDA728728C306DB00877021 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBDA726A28C306D800877021 /* khmerdictionary */;
+			targetProxy = FBDA728628C306DB00877021 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FBDA728D28C306DB00877021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBDA728E28C306DB00877021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBDA729028C306DB00877021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"khmerdictionary/Preview Content\"";
+				DEVELOPMENT_TEAM = 2255KN86WR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = khmerdictionary/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Khmer Dictionary";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.sovathna.khmerdictionary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBDA729128C306DB00877021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"khmerdictionary/Preview Content\"";
+				DEVELOPMENT_TEAM = 2255KN86WR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = khmerdictionary/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Khmer Dictionary";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.sovathna.khmerdictionary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FBDA729328C306DB00877021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2255KN86WR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.sovathna.khmerdictionaryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/khmerdictionary.app/khmerdictionary";
+			};
+			name = Debug;
+		};
+		FBDA729428C306DB00877021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2255KN86WR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.sovathna.khmerdictionaryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/khmerdictionary.app/khmerdictionary";
+			};
+			name = Release;
+		};
+		FBDA729628C306DB00877021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2255KN86WR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.sovathna.khmerdictionaryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = khmerdictionary;
+			};
+			name = Debug;
+		};
+		FBDA729728C306DB00877021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2255KN86WR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.sovathna.khmerdictionaryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = khmerdictionary;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBDA726628C306D800877021 /* Build configuration list for PBXProject "khmerdictionary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBDA728D28C306DB00877021 /* Debug */,
+				FBDA728E28C306DB00877021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBDA728F28C306DB00877021 /* Build configuration list for PBXNativeTarget "khmerdictionary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBDA729028C306DB00877021 /* Debug */,
+				FBDA729128C306DB00877021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBDA729228C306DB00877021 /* Build configuration list for PBXNativeTarget "khmerdictionaryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBDA729328C306DB00877021 /* Debug */,
+				FBDA729428C306DB00877021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBDA729528C306DB00877021 /* Build configuration list for PBXNativeTarget "khmerdictionaryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBDA729628C306DB00877021 /* Debug */,
+				FBDA729728C306DB00877021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FB0A92C128C77A940054BCFE /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weichsel/ZIPFoundation.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.14;
+			};
+		};
+		FBE224C528C64A6400CD3FC6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.1;
+			};
+		};
+		FBE224C828C64B1400CD3FC6 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.13.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB0A92C228C77A940054BCFE /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB0A92C128C77A940054BCFE /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
+		};
+		FBE224C628C64A6400CD3FC6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBE224C528C64A6400CD3FC6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		FBE224C928C64B1400CD3FC6 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBE224C828C64B1400CD3FC6 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FBDA726328C306D800877021 /* Project object */;
+}
